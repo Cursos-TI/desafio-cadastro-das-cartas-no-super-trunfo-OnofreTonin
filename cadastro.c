@@ -8,11 +8,11 @@ int main (){
 
     char code[4];
     printf("Agora com a letra escolhida acima escolha um número de 01 a 04\n");
-    scanf(" %3s", code);
+    scanf(" %3s", code); 
 
     char city[30];
     printf("Agora diga o nome da cidade\n");
-    while (getchar() != '\n');
+    while (getchar() != '\n'); // limpando buffer
     fgets(city, 30, stdin);
 
     int population;
@@ -33,9 +33,9 @@ int main (){
 
 
     float densidade;
-    densidade = (float) population/area;
+    densidade = (float) population/area; //fazendo o calculo de pibpercapt fazendo o cast das váriaveis population e area
     float pibpercapt;
-    pibpercapt = (float) pib/population;
+    pibpercapt = (float) pib/population; //fazendo o calculo de pibpercapt fazendo o cast das váriaveis pib e population
     printf("*¨¨Carta 01¨¨*\n");
     printf("Estado %c\n", state);
     printf("Código %s\n", code);
@@ -53,11 +53,11 @@ int main (){
 
     char code2[4];
     printf("Agora com a letra escolhida acima escolha um número de 01 a 04\n");
-    scanf(" %3s", code2);
+    scanf(" %3s", code2); 
 
     char city2[30];
     printf("Agora diga o nome da cidade\n");
-    while (getchar() != '\n');
+    while (getchar() != '\n'); // limpando buffer
     fgets(city2, 30, stdin);
 
     int population2;
@@ -77,9 +77,9 @@ int main (){
     scanf(" %d", &numtur2);
 
     float densidade2;
-    densidade2 = (float) population2/area2;
+    densidade2 = (float) population2/area2; //fazendo o calculo de pibpercapt fazendo o cast das váriaveis population2 e area2
     float pibpercapt2;
-    pibpercapt2 = (float) pib2/population2;
+    pibpercapt2 = (float) pib2/population2; //fazendo o calculo de pibpercapt fazendo o cast das váriaveis pib2 e population2
     printf("*¨¨Carta 02¨¨*\n");
     printf("Estado %c\n", state2);
     printf("Código %s\n", code2);
