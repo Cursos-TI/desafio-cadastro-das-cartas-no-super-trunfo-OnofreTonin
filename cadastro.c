@@ -116,18 +116,20 @@ int main (){
     Super Poder: Carta 1 venceu (1)
     */
 
+    char *resultado[] = {"Carta 2", "Carta 1"};
+                        //0 = Carta 2 e 1 = Carta 1
+
+
+
     printf("*¨¨Comparação de Cartas¨¨*\n");
-    printf("População: Carta 1 venceu (%d)\n", population>population2);
-    printf("Área: Carta 1 venceu(%d)\n", area>area2);
-    printf("PIB: Carta 1 venceu (%d)\n", pib>pib2);
-    printf("Pontos Turísticos: Carta 1 venceu(%d)\n", numtur>numtur2);
-    printf("Densidade Populacional: Carta 2 venceu(%d)\n", densidade2>densidade);
-    printf("PIB per Capita: Carta 1 venceu(%d)\n", pibpercapt>pibpercapt2);
-    printf("SuperPoder: Carta 1 venceu(%d)\n", Superpoder>Superpoder2);
-
-
-
-
+    printf("População: %s venceu \n", resultado[population>population2]); //resultado[0] ou resultado [1] 
+    printf("Área: %s venceu\n", resultado[area>area2]);
+    printf("PIB: %s venceu \n", resultado[pib>pib2]);
+    printf("Pontos Turísticos: %s venceu)\n", resultado[numtur>numtur2]);
+    printf("Densidade Populacional: %s venceu\n", resultado[densidade>densidade2]);
+    printf("PIB per Capita: %s venceu\n", resultado[pibpercapt>pibpercapt2]);
+    printf("SuperPoder: %s venceu\n", resultado[Superpoder>Superpoder2]);
+ 
 }
 
 /* Modelo da formatação
